@@ -1,0 +1,19 @@
+.mainContainer {
+    background-color: #A9A9A9;
+    position: absolute;
+
+    left: 30%;
+    right: 30%;
+    width: 40%;
+
+    top: 10%;
+    bottom: 10%;
+    height: 80%;
+
+    border: 5px solid white;
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

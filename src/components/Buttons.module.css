@@ -1,0 +1,67 @@
+.buttonsContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+    margin: 1.5rem 0;
+    padding: 1rem 0;
+
+    background-color: rgb(69, 69, 69, 0.8);
+}
+
+.on {
+    background-color: #4caf50;
+    border: 2px solid white;
+    border-radius: 2rem;
+    color: black;
+
+    padding: 1rem;
+    width: 8rem;
+
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.6);
+}
+
+/* Quando passar o mouse ou ficar ativado */
+.on:hover {
+    background-color: #008300;
+    transition: 0.6s;
+    color: white;
+    box-shadow: 5px 5px 5px rbg(0, 0, 0, 0.8);
+}
+
+.on:focus {
+    background-color: #008300;
+    color: white;
+    box-shadow: none;
+    transition: 0.6s;
+    border: 1px solid white;
+}
+
+.off {
+    background-color: #f44336;
+    border: 2px solid white;
+    color: black;
+
+    border-radius: 2rem;
+    padding: 1rem;
+    width: 8rem;
+
+    box-shadow: 5px 5px 5px rgb(0, 0, 0, 0.6);
+}
+
+/* Quando passar o mouse ou ficar ativado */
+.off:hover {
+    background-color: red;
+    transition: 0.6s;
+    color: white;
+    box-shadow: 5px 5px 5px rbg(0, 0, 0, 0.8);
+}
+
+.off:focus {
+    background-color: red;
+    color: white;
+    box-shadow: none;
+    transition: 0.6s;
+    border: 1px solid white;
+}

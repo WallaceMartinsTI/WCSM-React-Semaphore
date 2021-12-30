@@ -1,0 +1,50 @@
+import styles from './Parameters.module.css'
+import Semaphores from './Semaphores'
+import { useState } from 'react'
+
+function Parameters() {
+
+    const [secGreen, setSecGreen] = useState(3)
+    const [secYellow, setSecYellow] = useState(3)
+    const [secRed, setSecRed] = useState(3)
+
+    let currentColor = ''
+
+    const turnOnGreen = () => currentColor = 'GREEN'
+    const turnOnYellow = () => currentColor = 'YELLOW'
+    const turnOnRed = () => currentColor = 'RED'
+    const turnOff = () => currentColor = ''
+
+    function numberFomatter(secs) {
+        let result = secs * 1000
+        return result
+    }
+
+    // currentColor ? currentColor = 'GREEN' : currentColor = 'YELLOW'
+
+    return (
+        <>
+            <Semaphores startColor={currentColor} />
+            <div className={styles.mainContainer}>
+                <div className={styles.title}>
+                    <h1>Set time for lights</h1>
+                </div>
+                <form>
+                    <section className={styles.gridContainer}>
+                        <label htmlFor="green" id={styles.greenLabel}>Green:</label>
+                        <input type="number" id="green" name="green" placeholder="Seconds" onChange={(e) => setSecGreen((e.target.value))} />
+
+                        <label htmlFor="yellow" id={styles.yellowLabel}>Yellow:</label>
+                        <input type="number" id="yellow" name="yellow" placeholder="Seconds" onChange={(e) => setSecYellow((e.target.value))} />
+
+                        <label htmlFor="red" id={styles.redLabel}>Red:</label>
+                        <input type="number" id="red" name="red" placeholder="Seconds" onChange={(e) => setSecRed((e.target.value))} />
+                    </section>
+                </form>
+
+            </div>
+        </>
+    )
+}
+
+export default Parameters
