@@ -2,9 +2,13 @@
 
 I created this project to practice ReactJS which is the technology I'm learning at the moment, I could practice for example the use of components, useState and useEffect.
 
-## The applicatio Website
+### The applicatio Website
 
 <https://wallacemartinsti.github.io/wcsm-react-semaphore-site/>
+
+### YouTube video demonstrating the use of the application
+
+<https://youtu.be/B5sHHWmijI0>
 
 ## Getting Started with Create React App
 
