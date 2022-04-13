@@ -2,7 +2,7 @@
 
 I created this project to practice ReactJS which is the technology I'm learning at the moment, I could practice for example the use of components, useState and useEffect.
 
-### The applicatio Website
+### The application Website
 
 <https://wallacemartinsti.github.io/wcsm-react-semaphore-site/>
 
